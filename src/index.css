@@ -1,0 +1,30 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --navy: #1a2840;
+  --yellow: #f1b900;
+  --grey: #e7e6e6;
+  --headingFont: 38px; /*29pt */
+  --subHeadingFont: 22px; /*16pt */
+  --textFont: 16px; /*12pt */
+  --smallTextFont: 13px; /*10pt */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+section {
+  margin-bottom: 3rem;
+}

@@ -1,0 +1,54 @@
+.section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 2rem; */
+}
+
+.resume {
+  border: 6px solid var(--navy);
+  width: 21cm;
+  height: 29.7cm;
+  padding: 8px;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resumeLeft {
+  width: 67%;
+  height: 100%;
+  overflow: hidden;
+  margin-right: 8px;
+}
+
+.resumeRight {
+  width: 33%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.rightBottom {
+  background-color: var(--grey);
+  margin-top: 8px;
+  border-radius: 8px;
+  padding: 8px;
+  height: 74%;
+}
+
+@media print {
+  body {
+    visibility: hidden;
+  }
+
+  .section a {
+    display: none;
+  }
+
+  .resume {
+    visibility: visible;
+  }
+}

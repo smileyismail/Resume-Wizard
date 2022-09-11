@@ -1,0 +1,172 @@
+/* personal info */
+.personalInfo {
+  width: 100%;
+  height: 25%;
+  padding: 8px;
+  background-color: var(--grey);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.personalInfo h1 {
+  color: var(--navy);
+  font-size: var(--headingFont);
+}
+
+.personalInfo h4 {
+  color: var(--yellow);
+  text-indent: 2px;
+  font-size: var(--subHeadingFont);
+}
+
+.personalInfo p {
+  color: black;
+  text-align: justify;
+  text-indent: 1cm;
+  font-size: var(--textFont);
+}
+
+/* contact Info */
+.contactInfo {
+  background-color: var(--navy);
+  width: 100%;
+  height: 25%;
+  padding: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.contactInfo div {
+  color: var(--grey);
+  height: 20%;
+  font-size: var(--smallTextFont);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contactInfo div span {
+  color: var(--yellow);
+  font-size: var(--subHeadingFont);
+  margin-right: 8px;
+}
+
+/* project Info */
+
+.projectInfo {
+  margin-top: 8px;
+  height: 74%;
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.heading span {
+  font-size: var(--headingFont);
+  margin-right: 8px;
+  color: var(--navy);
+}
+
+.heading h4 {
+  margin-top: 14px;
+  text-decoration: underline;
+  font-size: var(--subHeadingFont);
+  color: var(--navy);
+}
+
+.projects {
+  margin-top: 16px;
+  height: 90%;
+  padding-left: 8px;
+}
+
+.projects h5 {
+  color: var(--navy);
+}
+
+.projects p {
+  text-align: justify;
+  font-size: var(--textFont);
+}
+
+/* skills Info */
+
+.skillsInfo {
+  margin-top: 8px;
+  height: 74%;
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  /* background-color: var(--grey); */
+}
+
+.skills {
+  font-size: var(--textFont);
+  margin-top: 13px;
+}
+
+.bar {
+  background-color: var(--navy);
+  height: 10px;
+  width: 100%;
+  border-radius: 3px;
+  padding: 1px;
+  overflow: hidden;
+}
+
+.bar div {
+  background-color: var(--yellow);
+  height: 100%;
+  width: 80%;
+  border-radius: 3px;
+}
+
+.education {
+  margin-top: 13px;
+  font-size: var(--textFont);
+}
+
+.education div span:nth-of-type(1) {
+  font-weight: bold;
+}
+.education div span:nth-of-type(2) {
+  font-size: var(--smallTextFont);
+}
+.education div span:nth-of-type(3) {
+  font-size: var(--smallTextFont);
+  font-style: italic;
+  color: var(--yellow);
+}
+
+.education div hr {
+  margin: 2px;
+}
+
+/* courses info */
+
+.coursesInfo {
+  margin-top: 8px;
+}
+
+.courses {
+  margin-top: 13px;
+}
+
+.courses div span:nth-of-type(1) {
+  font-weight: bold;
+}
+.courses div span:nth-of-type(2) {
+  font-size: var(--smallTextFont);
+}
+
+.courses div hr {
+  margin: 2px;
+}
