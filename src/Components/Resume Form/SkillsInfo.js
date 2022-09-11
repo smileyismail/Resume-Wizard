@@ -67,7 +67,7 @@ const SkillsInfo = () => {
                   onChange={(e) => skillRangeChangeHandler(e, index)}
                 />
                 <label htmlFor="range" className="fw-bold">
-                  {skillsList[index].range == ""
+                  {skillsList[index].range === ""
                     ? "50%"
                     : `${skillsList[index].range}%`}
                 </label>
