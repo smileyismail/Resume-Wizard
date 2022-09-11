@@ -5,6 +5,7 @@ import contactDataSlice from "./contactDataSlice";
 import educationDataSlice from "./educationDataSlice";
 import coursesDataSlice from "./coursesDataSlice";
 import skillsDataSlice from "./skillsDataSlice";
+import projectDataSlice from "./projectDataSlice";
 
 const store = configureStore({
   reducer: {
@@ -13,6 +14,7 @@ const store = configureStore({
     educationData: educationDataSlice.reducer,
     coursesData: coursesDataSlice.reducer,
     skillsData: skillsDataSlice.reducer,
+    projectsData: projectDataSlice.reducer,
   },
 });
 

@@ -17,8 +17,8 @@ const ResumeSkillsInfo = () => {
       </div>
 
       <div className={Styles.skills}>
-        {skills.map((skill) => (
-          <div className="mb-3  fw-bold">
+        {skills.map((skill, index) => (
+          <div key={index} className="mb-3  fw-bold">
             {skill.skillName}
             <div className={Styles.bar}>
               <div style={{ width: `${skill.range}%` }}></div>

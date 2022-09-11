@@ -7,6 +7,7 @@ import ContactInfo from "../Components/Resume Form/ContactInfo";
 import EducationInfo from "../Components/Resume Form/EducationInfo";
 import CoursesInfo from "../Components/Resume Form/CoursesInfo";
 import SkillsInfo from "../Components/Resume Form/SkillsInfo";
+import ProjectsInfo from "../Components/Resume Form/ProjectsInfo";
 
 const Editor = (props) => {
   function getPersonalData(data) {
@@ -17,7 +18,7 @@ const Editor = (props) => {
   }
 
   return (
-    <div className="m-auto col-6">
+    <div className="m-auto col-sm-6 col-11">
       <h1 className="text-center fw-bolder text-decoration-underline">
         Resume Builder
       </h1>
@@ -32,6 +33,8 @@ const Editor = (props) => {
       <CoursesInfo />
       <hr />
       <SkillsInfo />
+      <hr />
+      <ProjectsInfo />
       <hr />
       <div className="d-flex justify-content-center mb-4">
         <Link to="/template" className="btn-primary btn btn-lg">

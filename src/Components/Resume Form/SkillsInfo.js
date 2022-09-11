@@ -7,8 +7,6 @@ const SkillsInfo = () => {
   const dispatch = useDispatch();
   const skillsList = useSelector((state) => state.skillsData);
 
-  console.log(skillsList);
-
   function skillAddHandler() {
     if (skillsList.length === 6) {
       alert("You can add only 3 Courses");

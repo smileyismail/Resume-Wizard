@@ -1,10 +1,13 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 import Styles from "./ResumeComponents.module.css";
 
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 
 const ResumeProjectInfo = () => {
+  const projects = useSelector((state) => state.projectsData);
+
   return (
     <div className={Styles.projectInfo}>
       <div className={Styles.heading}>
@@ -15,33 +18,19 @@ const ResumeProjectInfo = () => {
       </div>
 
       <div className={Styles.projects}>
-        <div>
-          <h5 className="fw-bolder">Expense Tracker:</h5>
-          <p>
-            &nbsp;•&nbsp;Lorem ipsum dolor sit amet elit. Eum, asperiores <br />
-            &nbsp;•&nbsp;Lorem ipsum dolor sit amet elit. Corrupti, nihil
-            <br /> &nbsp;•&nbsp;Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. <br />
-          </p>
-        </div>
-        <div>
-          <h5 className="fw-bolder">Expense Tracker:</h5>
-          <p>
-            &nbsp;•&nbsp;Lorem ipsum dolor sit amet elit. Eum, asperiores <br />
-            &nbsp;•&nbsp;Lorem ipsum dolor sit amet elit. Corrupti, nihil
-            <br /> &nbsp;•&nbsp;Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. <br />
-          </p>
-        </div>
-        <div>
-          <h5 className="fw-bolder">Expense Tracker:</h5>
-          <p>
-            &nbsp;•&nbsp;Lorem ipsum dolor sit amet elit. Eum, asperiores <br />
-            &nbsp;•&nbsp;Lorem ipsum dolor sit amet elit. Corrupti, nihil
-            <br /> &nbsp;•&nbsp;Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. <br />
-          </p>
-        </div>
+        {projects.map((project, index) => (
+          <div key={index}>
+            <h5 className="fw-bolder">{project.projectName}:</h5>
+            <p>
+              &nbsp;•&nbsp;{project.pointOne}
+              <br />
+              &nbsp;•&nbsp;{project.pointTwo}
+              <br />
+              &nbsp;•&nbsp;{project.pointThree}
+              <br />
+            </p>
+          </div>
+        ))}
       </div>
     </div>
   );
