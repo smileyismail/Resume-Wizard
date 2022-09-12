@@ -20,14 +20,17 @@ const ResumeProjectInfo = () => {
       <div className={Styles.projects}>
         {projects.map((project, index) => (
           <div key={index}>
-            <h5 className="fw-bolder">{project.projectName}:</h5>
+            <h5 className="fw-bolder">
+              {index + 1}⟯ {project.projectName}:
+            </h5>
             <p>
-              &nbsp;•&nbsp;{project.pointOne}
+              <span>• {project.pointOne}</span>
               <br />
-              &nbsp;•&nbsp;{project.pointTwo}
+              <span>• {project.pointTwo}</span>
               <br />
-              &nbsp;•&nbsp;{project.pointThree}
+              <span>• {project.pointThree}</span>
               <br />
+              <hr className="m-2" />
             </p>
           </div>
         ))}

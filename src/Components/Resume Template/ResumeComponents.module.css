@@ -93,8 +93,11 @@
 }
 
 .projects p {
-  text-align: justify;
+  text-align: start;
   font-size: var(--textFont);
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
 }
 
 /* skills Info */
