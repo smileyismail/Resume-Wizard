@@ -50,15 +50,14 @@ const CoursesInfo = () => {
             <label htmlFor="education" className="fw-bold mb-1 fs-5">
               Course {index + 1}
             </label>
-            <div className="d-flex mb-2 ">
+            <div className="d-flex flex-sm-row flex-column">
               <input
                 type="text"
                 name="courseName"
-                className="form-control"
+                className="form-control mb-sm-0 mb-2 me-2"
                 placeholder="Course Name"
                 onChange={(e) => courseNameChangeHandler(e, index)}
               />
-              &nbsp;
               <input
                 type="text"
                 name="university"

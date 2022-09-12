@@ -72,30 +72,28 @@ const EducationInfo = () => {
             <label htmlFor="education" className="fw-bold mb-1 fs-5">
               Education {index + 1}
             </label>
-            <div className="d-flex mb-2 ">
+            <div className="d-flex flex-sm-row flex-column">
               <input
                 type="text"
-                className="form-control"
+                className="form-control me-2 mb-sm-0 mb-2 "
                 placeholder="Degree Name"
                 onChange={(e) => degreeChangeHandler(e, index)}
               />
-              &nbsp;
               <input
                 type="text"
-                className="form-control"
+                className="form-control mb-sm-0 mb-2  "
                 placeholder="University Name"
                 onChange={(e) => universityChangeHandler(e, index)}
               />
             </div>
 
-            <div className="col-7 d-flex ">
+            <div className="d-flex col-sm-8 col-12">
               <input
                 type="number"
-                className="form-control"
+                className="form-control me-2"
                 placeholder="Start Year"
                 onChange={(e) => startYearChangeHandler(e, index)}
               />
-              &nbsp;
               <input
                 type="number"
                 className="form-control"

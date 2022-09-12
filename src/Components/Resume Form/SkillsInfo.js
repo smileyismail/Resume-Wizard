@@ -45,26 +45,26 @@ const SkillsInfo = () => {
             <label htmlFor="education" className="fw-bold mb-1 fs-5">
               Skill {index + 1}
             </label>
-            <div className="d-flex mb-2 ">
+            <div className="d-flex flex-sm-row flex-column ">
               <input
                 type="text"
                 name="courseName"
-                className="form-control"
+                className="form-control me-2 mb-sm-0 mb-2"
                 placeholder="Skill Name"
                 onChange={(e) => skillNameChangeHandler(e, index)}
               />
-              &nbsp;
-              <div className="col-7 d-flex justify-content-between align-items-center p-0">
+              {/* &nbsp; */}
+              <div className="col-12 col-sm-8 d-flex justify-content-between align-items-center mt-2">
                 <input
                   type="range"
                   name="university"
                   id="range"
                   step="10"
                   placeholder="Platform Name"
-                  className="col-10 me-3"
+                  className="col-10 me-2 mb-sm-0 mb-2"
                   onChange={(e) => skillRangeChangeHandler(e, index)}
                 />
-                <label htmlFor="range" className="fw-bold">
+                <label htmlFor="range" className="fw-bold btn btn-secondary">
                   {skillsList[index].range === ""
                     ? "50%"
                     : `${skillsList[index].range}%`}

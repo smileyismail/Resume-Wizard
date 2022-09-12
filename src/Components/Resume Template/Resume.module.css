@@ -1,13 +1,16 @@
-.section {
+.resumeTemplate {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
-  /* margin-top: 2rem; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 22cm;
+  margin: 0 auto;
 }
 
 .resume {
   border: 6px solid var(--navy);
+  margin: 0 auto;
   width: 21cm;
   height: 29.7cm;
   padding: 8px;
@@ -40,14 +43,18 @@
 }
 
 @media print {
-  body {
-    visibility: hidden;
+  .resumeTemplate {
+    width: 100%;
+    height: 100%;
+    margin: none;
   }
-
-  .section a {
+  .resumeTemplate a {
     display: none;
   }
 
+  body {
+    visibility: hidden;
+  }
   .resume {
     visibility: visible;
   }

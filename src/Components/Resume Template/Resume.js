@@ -12,8 +12,8 @@ import Styles from "./Resume.module.css";
 
 const Resume = () => {
   return (
-    <section className={Styles.section}>
-      <Link to="/editor" className="btn btn-danger mb-3 mt-2 ">
+    <section className={Styles.resumeTemplate}>
+      <Link to="/editor" className="btn btn-danger mb-3 mt-3 ">
         Go Back
       </Link>
 
@@ -32,7 +32,7 @@ const Resume = () => {
         </div>
       </div>
 
-      <button className="btn btn-secondary mt-4" onClick={window.print}>
+      <button className="btn btn-secondary mt-3 mb-3" onClick={window.print}>
         Print
       </button>
     </section>
