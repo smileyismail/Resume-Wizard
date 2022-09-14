@@ -21,14 +21,19 @@ const ResumeContactInfo = () => {
         <span>
           <AiOutlineMail />
         </span>
-        {email}
+
+        <a href="https://www.google.com/" target="_">
+          {email}
+        </a>
       </div>
 
       <div>
         <span>
           <BsTelephone />
         </span>
-        {phone}
+        <a href="https://www.youtube.com/" target="_">
+          {phone}
+        </a>
       </div>
 
       <div>

@@ -48,7 +48,7 @@
     height: 100%;
     margin: none;
   }
-  .resumeTemplate a {
+  .resumeTemplate > a {
     display: none;
   }
 
