@@ -22,7 +22,7 @@ const ResumeContactInfo = () => {
           <AiOutlineMail />
         </span>
 
-        <a href="https://www.google.com/" target="_">
+        <a href="/" target="_">
           {email}
         </a>
       </div>
@@ -31,7 +31,7 @@ const ResumeContactInfo = () => {
         <span>
           <BsTelephone />
         </span>
-        <a href="https://www.youtube.com/" target="_">
+        <a href="/" target="_">
           {phone}
         </a>
       </div>
@@ -40,7 +40,7 @@ const ResumeContactInfo = () => {
         <span>
           <FiLinkedin />
         </span>
-        <a href="https://www.youtube.com/" target="_">
+        <a href="/" target="_">
           {linkedin}
         </a>
       </div>
@@ -49,7 +49,7 @@ const ResumeContactInfo = () => {
         <span>
           <FiGithub />
         </span>
-        <a href="https://www.youtube.com/" target="_">
+        <a href="/" target="_">
           {github}
         </a>
       </div>
@@ -58,7 +58,7 @@ const ResumeContactInfo = () => {
         <span>
           <BsPerson />
         </span>
-        <a href="https://www.youtube.com/" target="_">
+        <a href="/" target="_">
           {personal}
         </a>
       </div>

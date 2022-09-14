@@ -23,7 +23,7 @@ const ResumeProjectInfo = () => {
           <div key={index}>
             <h5 className="fw-bolder">
               {index + 1}⟯ {project.projectName}:
-              <a href="">
+              <a href="/">
                 <RiExternalLinkLine />
               </a>
             </h5>
