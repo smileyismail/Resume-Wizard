@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 import Styles from "./ResumeComponents.module.css";
+import { RiExternalLinkLine } from "react-icons/ri";
 
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 
@@ -22,6 +23,9 @@ const ResumeProjectInfo = () => {
           <div key={index}>
             <h5 className="fw-bolder">
               {index + 1}⟯ {project.projectName}:
+              <a href="">
+                <RiExternalLinkLine />
+              </a>
             </h5>
             <p>
               <span>• {project.pointOne}</span>
@@ -30,8 +34,8 @@ const ResumeProjectInfo = () => {
               <br />
               <span>• {project.pointThree}</span>
               <br />
-              <hr className="m-2" />
             </p>
+            <hr className="m-2" />
           </div>
         ))}
       </div>

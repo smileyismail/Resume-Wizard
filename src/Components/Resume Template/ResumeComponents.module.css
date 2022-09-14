@@ -96,11 +96,14 @@
 .projects h5 {
   color: var(--navy);
 }
+.projects h5 a {
+  color: var(--yellow);
+}
 
 .projects p {
   text-align: start;
-  font-size: var(--textFont);
-  font-size: 14px;
+  /* font-size: var(--textFont); */
+  font-size: 15px;
   margin: 0;
   padding: 0;
 }

@@ -40,21 +40,27 @@ const ResumeContactInfo = () => {
         <span>
           <FiLinkedin />
         </span>
-        {linkedin}
+        <a href="https://www.youtube.com/" target="_">
+          {linkedin}
+        </a>
       </div>
 
       <div>
         <span>
           <FiGithub />
         </span>
-        {github}
+        <a href="https://www.youtube.com/" target="_">
+          {github}
+        </a>
       </div>
 
       <div>
         <span>
           <BsPerson />
         </span>
-        {personal}
+        <a href="https://www.youtube.com/" target="_">
+          {personal}
+        </a>
       </div>
     </div>
   );
