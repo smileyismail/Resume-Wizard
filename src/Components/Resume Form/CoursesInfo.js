@@ -9,7 +9,7 @@ const CoursesInfo = () => {
 
   function courseAddHandler() {
     if (coursesList.length === 3) {
-      alert("You can add only 3 Courses");
+      alert("You can add only 3 Courses"); //fix fix this
       return;
     }
     dispatch(
